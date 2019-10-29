@@ -1,0 +1,12 @@
+
+
+
+/* BUTTON */
+#red-button {
+  background-color: #FA6060
+  border: none
+  padding: 180px 50px;
+  text-align:center;
+  display:inline-block;
+  font-size: 14px
+}
