@@ -2,7 +2,7 @@
 
 This project is my soon to be portofolio website.
 
-You can visit me by [clicking this link](https://www.figma.com/file/IkJK4B6BcCN30d2MgSCy6e/test-website?node-id=1%3A3)
+You can visit me by _[clicking this link](https://www.figma.com/file/IkJK4B6BcCN30d2MgSCy6e/test-website?node-id=1%3A3)_
 
 ## **FEATURES**
 
@@ -12,5 +12,5 @@ You can visit me by [clicking this link](https://www.figma.com/file/IkJK4B6BcCN3
 
 ## **SCREENSHOTS**
 
-![HOME](https://github.com/alhajiry/personal-website-example/blob/master/images/contacts.png)
+![HOME](https://github.com/alhajiry/personal-website-example/blob/master/images/home.png)
 ![CONTACT](https://github.com/alhajiry/personal-website-example/blob/master/images/contacts.png)
