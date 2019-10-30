@@ -1,20 +1,144 @@
-nav, ul, li {
-  position : relative;
-  display : block;
-  text-decoration: none;
-}
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap'");
 
-
-/* BUTTON */
-#red-button {
-  background-color: #FA6060
-  border: none
-  padding: 180px 50px;
-  text-align:center;
-  display:inline-block;
-  font-size: 14px
+/* STYLING */
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url;
+  box-sizing: border-box;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+/* NAVBAR PROPERTY */
+
+.navbar-menu {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(237, 243, 234, 0.1);
+  align-items: center;
+  padding: 25px;
+}
+
+.navbar-logo h1,
+span {
+  margin: 0;
+}
+
+.navbar-link {
+  width: 550px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+}
+
+/* .navbar-logo {
+  display: block;
+  float: left;
+  font-size: 12px;
+} */
+
+#logo-name {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#logo-subname {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+/* CONTENT*/
+#home {
+  padding-top: 200px;
+  padding-left: 75px;
+}
+
+#home-content h1 {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #fffefe;
+}
+
+#home-content h2 {
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fffefe;
+}
+
+/* BUTTON */
+
+#buttons {
+  margin-top: 50px;
+}
+
+#red-button {
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fa6060;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  transition-duration: 1.2s;
+}
+
+#red-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#grey-button {
+  padding: 20px;
+  background-color: rgba(44, 44, 44, 0.2);
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  transition-duration: 1.2s;
+}
+
+#grey-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#projects {
+  font-family: "Roboto", sans-serif;
+  color: #fffefe;
+}
+
+#contact {
+  font-family: "Roboto", sans-serif;
+  color: #fffefe;
 }
