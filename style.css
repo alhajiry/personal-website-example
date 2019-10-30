@@ -1,4 +1,8 @@
-
+nav, ul, li {
+  position : relative;
+  display : block;
+  text-decoration: none;
+}
 
 
 /* BUTTON */
@@ -9,4 +13,8 @@
   text-align:center;
   display:inline-block;
   font-size: 14px
+}
+
+body {
+  background-image: url;
 }
