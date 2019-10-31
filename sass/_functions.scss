@@ -1,0 +1,56 @@
+// BACKGROUND AND OVERLAY //
+@mixin add-background() {
+  box-sizing: border-box;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin add-overlay() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+// NAVBAR FUNCTION //
+
+@mixin navbar-menu-stay-on-top() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin navbar-link-stay-on-top() {
+  width: 550px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin navbar-logo-formatting() {
+  color: white;
+  font-family: $primary-font;
+}
+
+@mixin button-default-styling() {
+  margin-right: 20px;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  transition-duration: 1.2s;
+}
+
+// FORMATTING //
+
+@mixin default-formatting() {
+  font-family: "Roboto", sans-serif;
+  color: #fffefe;
+} // @mixin home-content-h1

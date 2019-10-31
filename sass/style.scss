@@ -1,0 +1,108 @@
+@import "functions";
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap'");
+
+* {
+  box-sizing: border-box;
+}
+
+// HTML & BODY //
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include add-background();
+
+  #overlay {
+    @include add-overlay();
+  }
+}
+
+// NAVBAR CONTENT//
+
+.navbar-menu {
+  @include navbar-menu-stay-on-top;
+  background-color: $navbar-menu-background-color;
+  padding: 25px;
+
+  .navbar-logo {
+    h1,
+    span {
+      margin: 0;
+    }
+  }
+
+  .navbar-link {
+    @include navbar-link-stay-on-top;
+    font-family: $primary-font;
+    font-weight: $semibold-font;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 36px;
+    }
+  }
+
+  #logo-name {
+    @include navbar-logo-formatting;
+    font-weight: $bold-font;
+    font-size: 36px;
+  }
+
+  #logo-subname {
+    @include navbar-logo-formatting;
+    font-size: 14px;
+  }
+}
+
+// CONTENT //
+#home {
+  padding-top: 200px;
+  padding-left: 75px;
+
+  #home-content {
+    h1 {
+      margin: 0;
+      font-family: $primary-font;
+      font-size: 72px;
+      font-weight: $normal-font;
+      color: white;
+    }
+
+    h2 {
+      padding-top: 10 px;
+      font-family: $primary-font;
+      font-size: 36px;
+      font-weight: $normal-font;
+      color: white;
+    }
+  }
+}
+
+// BUTTONS //
+
+#buttons {
+  #red-button {
+    @include button-default-styling();
+    background-color: #fa6060;
+    color: white;
+
+    :hover {
+      box-shadow: $button-shadow;
+    }
+  }
+
+  #grey-button {
+    @include button-default-styling();
+    background-color: rgba(44, 44, 44, 0.2);
+    color: white;
+
+    :hover {
+      box-shadow: $button-shadow;
+    }
+  }
+}
